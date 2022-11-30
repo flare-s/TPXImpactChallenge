@@ -1,0 +1,199 @@
+/* global */
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: calc(18rem / 16);
+    background-color: rgb(43, 113, 159);
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+}
+
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: calc(350rem/16);
+    min-height: calc(200rem/16);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.main-nav {
+    flex: 1;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-nav a {
+    min-width: calc(100rem/16);
+    text-align: center;
+    background-color: rgb(43, 113, 159);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* poster styles */
+
+.poster {
+    max-width: calc(460rem/16);
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    padding: calc(30rem/16);
+    min-height: 100vh;
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 50px) 1fr;
+    gap: 15px;
+}
+
+.column {
+    background-color: rgb(194, 71, 57);
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content__heading {
+    margin-top: calc(20vh);
+    margin-bottom: auto;
+}
+
+.content__heading h1 {
+    font-size: calc(52rem/14);
+    font-weight: bold;
+}
+
+.content__heading p {
+    font-size: calc(16rem/16);
+}
+
+.content__vertical {
+    order: -1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: calc(12rem/16);
+    font-weight: bold;
+}
+
+.content__text time {
+    font-size: calc(32rem/16);
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content__text .separator {
+    display: inline-block;
+    height: 23px;
+    width: 5px;
+    background-color: rgb(194, 71, 57);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.content__text p:first-of-type {
+    font-size: calc(18rem/16);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content__text p:last-of-type {
+    font-size: calc(12rem/16);
+}
+
+
+/* stopwatch */
+
+.stopwatch-wrapper { 
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    min-height: 100vh;
+  }
+  
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    min-width: calc(350rem/16);
+    min-height: calc(250rem/16);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+  }
+
+  .stopwatch h1 {
+    font-size: calc(36rem/16);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .stopwatch p {
+    font-size: calc(24rem/16);
+  }
+  
+  .control-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .control-buttons-wrapper button {
+    min-width: calc(100rem/16);
+    background-color: rgb(43, 113, 159);
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 3px 8px;
+  }
+  
+  
